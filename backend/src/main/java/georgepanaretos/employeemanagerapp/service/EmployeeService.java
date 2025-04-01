@@ -1,6 +1,5 @@
 package georgepanaretos.employeemanagerapp.service;
 
-import georgepanaretos.employeemanagerapp.EmployeeManagerAppApplication;
 import georgepanaretos.employeemanagerapp.exception.UserNotFoundException;
 import georgepanaretos.employeemanagerapp.model.Employee;
 import georgepanaretos.employeemanagerapp.repo.EmployeeRepo;

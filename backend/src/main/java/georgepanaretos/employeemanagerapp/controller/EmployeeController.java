@@ -1,4 +1,4 @@
-package georgepanaretos.employeemanagerapp;
+package georgepanaretos.employeemanagerapp.controller;
 
 import georgepanaretos.employeemanagerapp.model.Employee;
 import georgepanaretos.employeemanagerapp.service.EmployeeService;
@@ -10,10 +10,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/employee")
-public class EmployeeResource {
+public class EmployeeController {
     private  final EmployeeService employeeService;
 
-    public EmployeeResource(EmployeeService employeeService) {
+    public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
 
