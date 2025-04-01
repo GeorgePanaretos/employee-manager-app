@@ -3,9 +3,9 @@ package georgepanaretos.employeemanagerapp.service;
 import georgepanaretos.employeemanagerapp.exception.UserNotFoundException;
 import georgepanaretos.employeemanagerapp.model.Employee;
 import georgepanaretos.employeemanagerapp.repo.EmployeeRepo;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.UUID;
 
