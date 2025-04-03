@@ -1,0 +1,30 @@
+databaseChangeLog:
+- changeSet:
+    id: create-employee-table
+    author: georgepanaretos
+    changes:
+    - createTable:
+        tableName: employee
+        columns:
+        - name: id
+          type: BIGINT
+          autoIncrement: true
+          constraints:
+            primaryKey: true
+            nullable: false
+        - name: address
+          type: VARCHAR(255)
+        - name: email
+          type: VARCHAR(255)
+        - name: employee_code
+          type: VARCHAR(255)
+          constraints:
+            nullable: false
+        - name: image_url
+          type: VARCHAR(255)
+        - name: job_title
+          type: VARCHAR(255)
+        - name: name
+          type: VARCHAR(255)
+        - name: phone
+          type: VARCHAR(255)
