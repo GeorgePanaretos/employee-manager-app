@@ -15,7 +15,6 @@ public class Employee implements Serializable {
     @Column(nullable = false, updatable = false)
     private Long id;
 
-    // Basic information
     @Column(nullable = false)
     private String name;
 
@@ -36,12 +35,10 @@ public class Employee implements Serializable {
 
     private String address;
 
-    // Relationship with Department
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "department_id", nullable = false)
     private Department department;
 
-    // Additional fields
     private Date dateOfBirth;
     private Date hireDate;
 

@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001-init-schema
+      author: george
+      changes:
+        - sqlFile:
+            dbms: mysql
+            splitStatements: true
+            path: classpath:data_model/init_schema.sql
+            stripComments: true
+
+  - changeSet:
+      id: 002-enrich-employee-add-department
+      author: george
+      changes:
+        - sqlFile:
+            dbms: mysql
+            splitStatements: true
+            path: classpath:data_model/enrich_employee_add_department.sql
+            stripComments: true
+
+  - changeSet:
+      id: 003-insert-initial-data
+      author: george
+      changes:
+        - sqlFile:
+            dbms: mysql
+            splitStatements: true
+            path: classpath:data_model/insert_initial_data.sql
+            stripComments: true
